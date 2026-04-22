@@ -23,8 +23,8 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
-        scrolled ? "bg-background/90 backdrop-blur-md shadow-card" : "bg-transparent"
+      className={`fixed top-0 inset-x-0 z-50 transition-smooth bg-primary/95 backdrop-blur-md border-b border-accent/20 ${
+        scrolled ? "shadow-card" : ""
       }`}
     >
       <div className="container flex items-center justify-between h-20">
@@ -36,11 +36,7 @@ export const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-smooth ${
-                scrolled
-                  ? "text-foreground/80 hover:text-primary"
-                  : "text-primary-foreground/90 hover:text-accent text-shadow-hero"
-              }`}
+              className="text-xs font-bold tracking-[0.13em] uppercase text-primary-foreground/80 hover:text-accent transition-smooth"
             >
               {l.label}
             </a>
@@ -48,37 +44,33 @@ export const Navbar = () => {
           <Button
             asChild
             size="sm"
-            className={
-              scrolled
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                : "bg-gold-gradient text-primary border-0 shadow-gold hover:opacity-95"
-            }
+            className="bg-gold-gradient text-primary border-0 shadow-gold hover:opacity-95 font-bold"
           >
             <a href="#contact">Get in touch</a>
           </Button>
         </nav>
         <button
           aria-label="Toggle menu"
-          className={`md:hidden p-2 ${scrolled ? "text-primary" : "text-primary-foreground"}`}
+          className="md:hidden p-2 text-primary-foreground"
           onClick={() => setOpen(!open)}
         >
           {open ? <X /> : <Menu />}
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="md:hidden bg-primary border-t border-accent/20">
           <div className="container py-4 flex flex-col gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-medium py-2"
+                className="text-sm font-medium py-2 text-primary-foreground/85 hover:text-accent"
               >
                 {l.label}
               </a>
             ))}
-            <Button asChild>
+            <Button asChild className="bg-gold-gradient text-primary border-0">
               <a href="#contact">Get in touch</a>
             </Button>
           </div>
