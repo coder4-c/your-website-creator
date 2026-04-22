@@ -8,7 +8,10 @@ const experts = [
     role: "Senior Operations Consultant",
     bio: "Expert in operational efficiency and strategic planning, with extensive experience in enterprise transformations.",
     fullDetails: {
-      contact: null,
+      contact: {
+        phone: "",
+        email: "kevin.edmondson@meridian.com"
+      },
       summary: "Senior strategic operations and leadership advisor with more than 30 years of experience guiding executive leadership on organizational strategy, workforce development, enterprise operations, and international collaboration initiatives.",
       competencies: [
         "Strategic Advisory Services",
@@ -23,23 +26,19 @@ const experts = [
       education: [
         {
           institution: "Trident University International",
-          degree: "Bachelor of Science in Business Administration",
-          description: "Graduated Cum Laude. Relevant focus areas included organizational leadership, management strategy, business operations, and decision analysis."
+          degree: "Bachelor of Science in Business Administration"
         },
         {
           institution: "U.S. Army Sergeants Major Academy",
-          degree: "Senior Executive Level Leadership Program",
-          description: "Focused on organizational strategy, national security policy, and enterprise leadership."
+          degree: "Senior Executive Level Leadership Program"
         },
         {
           institution: "Strategic Leader Development Program",
-          degree: "Advanced Leadership Development",
-          description: "Focused on strategic decision making, organizational leadership, and complex operational environments."
+          degree: "Advanced Leadership Development"
         },
         {
           institution: "Senior Leader Development Course",
-          degree: "Advanced Leadership Training",
-          description: "Preparing senior leaders for enterprise level responsibilities."
+          degree: "Advanced Leadership Training"
         }
       ]
     }
@@ -72,23 +71,19 @@ const experts = [
       education: [
         {
           institution: "Air Command & Staff College",
-          degree: "2019",
-          description: ""
+          degree: "2019"
         },
         {
           institution: "Webster University, Alamo Heights, TX",
-          degree: "Master of Science in Leadership and Management",
-          description: "2014"
+          degree: "Master of Science in Leadership and Management"
         },
         {
           institution: "University of Notre Dame, South Bend, IN",
-          degree: "Leadership & Management Studies",
-          description: "2012"
+          degree: "Leadership & Management Studies"
         },
         {
           institution: "Bellevue University, Bellevue, NE",
-          degree: "Bachelor of Science in Information Systems, Minor in Business",
-          description: "2004"
+          degree: "Bachelor of Science in Information Systems, Minor in Business"
         }
       ]
     }
@@ -136,14 +131,18 @@ export const Experts = () => (
                           <div>
                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Contact</p>
                             <div className="flex gap-2">
-                              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
-                                <div className="w-2 h-2 rounded-full bg-accent"></div>
-                                {p.fullDetails.contact.phone}
-                              </span>
-                              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
-                                <div className="w-2 h-2 rounded-full bg-accent"></div>
-                                {p.fullDetails.contact.email}
-                              </span>
+                              {p.fullDetails.contact.phone && (
+                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
+                                  <div className="w-2 h-2 rounded-full bg-accent"></div>
+                                  {p.fullDetails.contact.phone}
+                                </span>
+                              )}
+                              {p.fullDetails.contact.email && (
+                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
+                                  <div className="w-2 h-2 rounded-full bg-accent"></div>
+                                  {p.fullDetails.contact.email}
+                                </span>
+                              )}
                             </div>
                           </div>
                           <hr className="border-border" />
@@ -151,7 +150,7 @@ export const Experts = () => (
                       )}
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Summary</p>
-                        <p className="text-muted-foreground leading-relaxed">{p.fullDetails.summary}</p>
+                        <p className="text-muted-foreground leading-relaxed line-clamp-3">{p.fullDetails.summary}</p>
                       </div>
                       <hr className="border-border" />
                       <div>
