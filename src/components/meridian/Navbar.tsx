@@ -36,18 +36,30 @@ export const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
+              className={`text-sm font-medium transition-smooth ${
+                scrolled
+                  ? "text-foreground/80 hover:text-primary"
+                  : "text-primary-foreground/90 hover:text-accent text-shadow-hero"
+              }`}
             >
               {l.label}
             </a>
           ))}
-          <Button asChild variant="default" size="sm">
+          <Button
+            asChild
+            size="sm"
+            className={
+              scrolled
+                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                : "bg-gold-gradient text-primary border-0 shadow-gold hover:opacity-95"
+            }
+          >
             <a href="#contact">Get in touch</a>
           </Button>
         </nav>
         <button
           aria-label="Toggle menu"
-          className="md:hidden p-2 text-primary"
+          className={`md:hidden p-2 ${scrolled ? "text-primary" : "text-primary-foreground"}`}
           onClick={() => setOpen(!open)}
         >
           {open ? <X /> : <Menu />}
