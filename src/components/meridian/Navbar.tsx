@@ -31,12 +31,12 @@ export const Navbar = () => {
         <a href="#top" className="flex items-center gap-3">
           <img src={logo} alt="Meridian Consulting Group" className="h-12 w-auto" />
         </a>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 ml-auto mr-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-xs font-bold tracking-[0.13em] uppercase text-primary-foreground/80 hover:text-accent transition-smooth"
+              className="text-sm font-medium tracking-normal normal-case text-primary-foreground/80 hover:text-accent transition-smooth"
             >
               {l.label}
             </a>
