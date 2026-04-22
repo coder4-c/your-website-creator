@@ -10,21 +10,22 @@ import { Experts } from "@/components/meridian/Experts";
 import { Insights } from "@/components/meridian/Insights";
 import { Contact } from "@/components/meridian/Contact";
 import { Footer } from "@/components/meridian/Footer";
+import { Reveal } from "@/components/meridian/Reveal";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <main>
       <Hero />
-      <Credibility />
-      <HowWeHelp />
-      <Framework />
-      <ValueCompare />
-      <Services />
-      <Metrics />
-      <Experts />
-      <Insights />
-      <Contact />
+      <Reveal><Credibility /></Reveal>
+      <Reveal><HowWeHelp /></Reveal>
+      <Reveal><Framework /></Reveal>
+      <Reveal><ValueCompare /></Reveal>
+      <Reveal><Services /></Reveal>
+      <Reveal><Metrics /></Reveal>
+      <Reveal><Experts /></Reveal>
+      <Reveal><Insights /></Reveal>
+      <Reveal><Contact /></Reveal>
     </main>
     <Footer />
   </div>
