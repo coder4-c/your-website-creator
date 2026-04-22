@@ -14,7 +14,7 @@ export const Contact = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      toast.success("Thanks — we'll be in touch within one business day.");
+      toast.success("Thanks. We'll be in touch within one business day.");
       (e.target as HTMLFormElement).reset();
     }, 700);
   };
@@ -25,11 +25,11 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4">Contact</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               Let's talk about what's<span className="text-gold italic"> not aligned.</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-lg">
-              Tell us about the problem you're trying to solve. We'll respond personally with a clear next step — no sales sequence.
+            <p className="text-base text-muted-foreground mb-8 leading-relaxed max-w-lg">
+              Tell us about the problem you're trying to solve. We'll respond personally with a clear next step. No sales sequence.
             </p>
 
             <div className="space-y-6">

@@ -11,10 +11,10 @@ export const Framework = () => (
     <div className="container">
       <div className="max-w-2xl mx-auto text-center mb-16">
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4">Core framework</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           The path to measurable outcomes.
         </h2>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-base text-muted-foreground">
           Five disciplines, sequenced. When one is broken, performance breaks with it.
         </p>
       </div>

@@ -24,14 +24,14 @@ export const Hero = () => (
         <span className="inline-flex items-center justify-center gap-3 text-[11px] font-semibold tracking-[0.3em] uppercase text-accent mb-8">
           <span className="h-px w-12 bg-accent" /> Meridian Consulting Group <span className="h-px w-12 bg-accent" />
         </span>
-        <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-[1.05] mb-8 text-shadow-hero">
+        <h1 className="text-4xl md:text-6xl font-semibold text-primary-foreground leading-[1.1] mb-6 text-shadow-hero">
           Strengthening Leadership.
           <span className="block text-gold italic font-serif">Aligning Systems.</span>
           Driving Performance.
         </h1>
-        <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed text-shadow-hero">
+        <p className="text-base md:text-lg text-primary-foreground/90 max-w-2xl mx-auto mb-8 leading-relaxed text-shadow-hero">
           We help organizations diagnose root problems, align leadership and systems,
-          and execute with measurable outcomes — across military, healthcare, and enterprise technology.
+          and execute with measurable outcomes across military, healthcare, and enterprise technology.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button asChild size="lg" className="bg-gold-gradient text-primary hover:opacity-95 shadow-gold border-0 font-semibold">

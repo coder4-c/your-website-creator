@@ -6,8 +6,8 @@ export const Footer = () => (
       <div className="grid md:grid-cols-4 gap-10 pb-12 border-b border-primary-foreground/10">
         <div className="md:col-span-2">
           <img src={logo} alt="Meridian Consulting Group" className="h-14 w-auto bg-primary-foreground rounded p-1 mb-5" />
-          <p className="text-primary-foreground/70 max-w-md leading-relaxed">
-            The Meridian Strategic Consulting Group LLC — Aligning strategy, structure, and execution for measurable performance.
+          <p className="text-primary-foreground/70 max-w-md leading-relaxed text-sm">
+            The Meridian Strategic Consulting Group LLC. Aligning strategy, structure, and execution for measurable performance.
           </p>
         </div>
         <div>
