@@ -70,7 +70,7 @@ export const Navbar = () => {
                 {l.label}
               </a>
             ))}
-            <Button asChild className="bg-gold-gradient text-primary border-0">
+            <Button asChild className="bg-gold-gradient text-primary border-0" onClick={() => setOpen(false)}>
               <a href="#contact">Get in touch</a>
             </Button>
           </div>
