@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Meridian Consulting Group Website
 
-TODO: Document your project here
+Strategic consulting landing page built with React, TypeScript, and Tailwind CSS.
