@@ -91,7 +91,7 @@ const experts = [
 ];
 
 export const Experts = () => (
-  <section id="experts" className="py-24 bg-background">
+   <section id="experts" className="pt-20 pb-24" style={{ backgroundColor: '#f7f6f3' }}>
     <div className="container">
       <div className="max-w-2xl mb-6">
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4">Our experts</p>
@@ -100,33 +100,34 @@ export const Experts = () => (
           Every Meridian engagement is led by a partner with operational experience inside the industry we serve.
         </p>
       </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-12">
           {experts.map((p, index) => (
-            <article key={p.name} className="group bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
+            <div key={p.name} className="w-full flex gap-8 items-start animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
+              <div className="w-[45%] self-stretch">
                 <img
                   src={p.img}
                   alt={p.name}
                   loading="lazy"
                   width={800}
                   height={1000}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  style={p.name === "Maurice Evans" ? { objectPosition: "center 10%" } : {}}
+                  className="w-full h-full object-cover object-top rounded-lg"
                 />
               </div>
-              <div className="flex items-center gap-4 mb-2">
-                <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-lg">
-                  {p.name.split(' ').map(n => n[0]).join('')}
+              <div className="w-[55%] pl-10 flex flex-col">
+                <div className="flex items-center gap-4 mb-2">
+                  <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-lg">
+                    {p.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                  <h3 className="text-3xl font-bold text-primary">{p.name}</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-primary group-hover:text-primary/80 transition-colors">{p.name}</h3>
-              </div>
-              <p className="text-sm font-semibold text-accent uppercase tracking-wider mt-1 mb-3">{p.role}</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">{p.bio}</p>
-              {p.fullDetails && (
-                <Accordion type="single" collapsible className="border-t pt-4">
-                  <AccordionItem value="full-profile" className="border-none">
-                    <AccordionTrigger className="text-primary hover:text-primary/80 font-semibold">View Full Profile</AccordionTrigger>
-                    <AccordionContent className="pt-2 space-y-6">
+                <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">{p.role}</p>
+                <p className="text-muted-foreground leading-relaxed mb-4">{p.bio}</p>
+                <hr className="border-border mb-4" />
+                {p.fullDetails && (
+                  <Accordion type="single" collapsible className="border-t pt-4">
+                    <AccordionItem value="full-profile" className="border-none">
+                      <AccordionTrigger className="text-primary hover:text-primary/80 font-semibold">View Full Profile</AccordionTrigger>
+                      <AccordionContent className="pt-2 space-y-6">
                       {p.fullDetails.contact && (
                         <>
                           <div>
@@ -181,7 +182,8 @@ export const Experts = () => (
                   </AccordionItem>
                 </Accordion>
               )}
-            </article>
+              </div>
+            </div>
           ))}
         </div>
     </div>
