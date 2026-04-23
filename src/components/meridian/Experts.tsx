@@ -103,7 +103,7 @@ export const Experts = () => (
         <div className="space-y-12">
           {experts.map((p, index) => (
             <div key={p.name} className="w-full flex gap-8 items-start animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="w-[45%] self-stretch min-h-full">
+              <div className="w-[45%] h-[480px] overflow-hidden">
                 <img
                   src={p.img}
                   alt={p.name}
@@ -111,6 +111,7 @@ export const Experts = () => (
                   width={800}
                   height={1000}
                   className="w-full h-full object-cover object-top rounded-lg"
+                  style={{ display: 'block' }}
                 />
               </div>
               <div className="w-[55%] pl-10 flex flex-col">
