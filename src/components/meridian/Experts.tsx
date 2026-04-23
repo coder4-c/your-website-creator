@@ -6,7 +6,7 @@ const experts = [
     img: "/kelvin.jpeg",
     name: "Kevin Edmondson",
     role: "Senior Operations Consultant",
-    bio: "Expert in operational efficiency and strategic planning, with extensive experience in enterprise transformations.",
+    bio: "Senior strategic operations advisor with experience in guiding executive leadership on organizational strategy, workforce development, delivering measurable improvements in execution consistency and operational efficiency..",
     fullDetails: {
       contact: {
         phone: "",
@@ -121,7 +121,7 @@ export const Experts = () => (
                 <h3 className="text-2xl font-bold text-primary group-hover:text-primary/80 transition-colors">{p.name}</h3>
               </div>
               <p className="text-sm font-semibold text-accent uppercase tracking-wider mt-1 mb-3">{p.role}</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">{p.bio}</p>
+              <p className="text-muted-foreground leading-relaxed mb-4 min-h-[72px]">{p.bio}</p>
               {p.fullDetails && (
                 <Accordion type="single" collapsible className="border-t pt-4">
                   <AccordionItem value="full-profile" className="border-none">
