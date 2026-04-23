@@ -93,7 +93,7 @@ const experts = [
 export const Experts = () => (
   <section id="experts" className="py-24 bg-background">
     <div className="container">
-      <div className="max-w-2xl mb-16">
+      <div className="max-w-2xl mb-6">
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4">Our experts</p>
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Senior practitioners.</h2>
         <p className="text-base text-muted-foreground">
