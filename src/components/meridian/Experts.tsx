@@ -111,6 +111,7 @@ export const Experts = () => (
                   width={800}
                   height={1000}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  style={p.name === "Maurice Evans" ? { objectPosition: "center 10%" } : {}}
                 />
               </div>
               <div className="flex items-center gap-4 mb-2">
