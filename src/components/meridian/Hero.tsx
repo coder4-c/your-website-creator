@@ -34,7 +34,7 @@ export const Hero = () => (
           and execute with measurable outcomes across military, healthcare, and enterprise technology.
         </p>
         <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent rounded-full px-4 py-2 mb-8">
-          <span className="text-accent font-semibold text-sm">Organizational Performance Diagnostic (2–4 weeks)</span>
+          <a href="#contact" className="text-accent font-semibold hover:underline">Organizational Performance Diagnostic (2–4 weeks)</a>
         </div>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button asChild size="lg" className="bg-gold-gradient text-primary hover:opacity-95 shadow-gold border-0 font-semibold">

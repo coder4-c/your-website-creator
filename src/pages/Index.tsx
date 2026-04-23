@@ -19,12 +19,12 @@ const Index = () => (
       <Hero />
       <Reveal><Credibility /></Reveal>
       <Reveal><HowWeHelp /></Reveal>
+      <Reveal><Services /></Reveal>
       <Reveal><Framework /></Reveal>
       <Reveal><Insights /></Reveal>
-      <Reveal><ValueCompare /></Reveal>
-      <Reveal><Services /></Reveal>
-      <Reveal><Metrics /></Reveal>
       <Reveal><Experts /></Reveal>
+      <Reveal><ValueCompare /></Reveal>
+      <Reveal><Metrics /></Reveal>
       <Reveal><Contact /></Reveal>
     </main>
     <Footer />

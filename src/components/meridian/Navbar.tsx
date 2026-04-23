@@ -6,8 +6,8 @@ import logo from "@/assets/meridian-logo.jpeg";
 const links = [
   { href: "#services", label: "Services" },
   { href: "#framework", label: "Framework" },
-  { href: "#experts", label: "Our Experts" },
   { href: "#insights", label: "Insights" },
+  { href: "#experts", label: "Our Experts" },
   { href: "#contact", label: "Contact" },
 ];
 
