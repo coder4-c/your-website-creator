@@ -29,9 +29,8 @@ export const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="pt-8 flex flex-wrap items-center justify-between gap-4 text-sm text-primary-foreground/60">
+      <div className="pt-8 text-sm text-primary-foreground/60">
         <p>© {new Date().getFullYear()} The Meridian Strategic Consulting Group LLC. All rights reserved.</p>
-        <p className="italic font-serif text-accent">Aligning Strategy, Structure, and Execution.</p>
       </div>
     </div>
   </footer>

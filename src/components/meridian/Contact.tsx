@@ -26,10 +26,10 @@ export const Contact = () => {
           <div>
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-accent mb-4">Contact</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Let's talk about what's<span className="text-gold italic"> not aligned.</span>
+              Schedule a Leadership Alignment Conversation
             </h2>
             <p className="text-base text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              Tell us about the problem you're trying to solve. We'll respond personally with a clear next step. No sales sequence.
+              We'll quickly identify where performance is breaking down.
             </p>
 
             <div className="space-y-6">

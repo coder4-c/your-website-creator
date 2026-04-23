@@ -4,15 +4,15 @@ const without = [
   "Siloed teams",
   "Inconsistent execution",
   "Reactive decisions",
-  "Operational friction",
+  "Operational inefficiencies",
   "Unclear accountability",
 ];
 const withMeridian = [
   "Aligned leadership",
   "Standardized systems",
-  "Structured decision-making",
+  "Structured decisions",
   "Measurable outcomes",
-  "Clear ownership at every level",
+  "Clear ownership",
 ];
 
 export const ValueCompare = () => (

@@ -29,19 +29,22 @@ export const Hero = () => (
           <span className="block text-gold italic font-serif">Aligning Systems.</span>
           Driving Performance.
         </h1>
-        <p className="text-base md:text-lg text-primary-foreground/90 max-w-2xl mx-auto mb-8 leading-relaxed text-shadow-hero">
+        <p className="text-base md:text-lg text-primary-foreground/90 max-w-2xl mx-auto mb-4 leading-relaxed text-shadow-hero">
           We help organizations diagnose root problems, align leadership and systems,
           and execute with measurable outcomes across military, healthcare, and enterprise technology.
         </p>
+        <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent rounded-full px-4 py-2 mb-8">
+          <span className="text-accent font-semibold text-sm">Organizational Performance Diagnostic (2–4 weeks)</span>
+        </div>
         <div className="flex flex-wrap gap-4 justify-center">
           <Button asChild size="lg" className="bg-gold-gradient text-primary hover:opacity-95 shadow-gold border-0 font-semibold">
             <a href="#contact">
               Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground bg-primary-foreground/5 backdrop-blur hover:bg-primary-foreground/15 hover:text-primary-foreground hover:border-accent">
-            <a href="#framework">Explore our framework</a>
-          </Button>
+           <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground bg-primary-foreground/5 backdrop-blur hover:bg-primary-foreground/15 hover:text-primary-foreground hover:border-accent">
+             <a href="#contact">Schedule a 20 minutes Leadership Alignment Conversation</a>
+           </Button>
         </div>
 
         {/* Trust strip for added professionalism */}
@@ -53,6 +56,7 @@ export const Hero = () => (
           <div>
             <p className="font-serif text-3xl font-bold text-accent">94%</p>
             <p className="text-xs uppercase tracking-widest text-primary-foreground/70 mt-1">Renewal rate</p>
+            <p className="text-xs text-primary-foreground/50">based on internal engagements</p>
           </div>
           <div>
             <p className="font-serif text-3xl font-bold text-accent">3</p>

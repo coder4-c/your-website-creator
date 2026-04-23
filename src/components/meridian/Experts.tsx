@@ -3,6 +3,49 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const experts = [
   {
+    img: "/mauriceedmondson.jpeg",
+    name: "Maurice V. Edmondson III",
+    role: "Founder & Managing Partner",
+    bio: "Maurice Edmondson is a strategic advisor who helps organizations turn strategy into execution. With over 30 years of experience and leadership across $215M+ in enterprise initiatives, he specializes in diagnosing operational breakdowns and building systems that drive accountability, performance, and scalable growth.",
+    fullDetails: {
+      contact: {
+        phone: "(210) 273-7533",
+        email: "maurice.edmondson@gmail.com"
+      },
+      summary: "He brings over 30 years of experience spanning military service, federal leadership, and strategic advisory consulting. Maurice has led and overseen enterprise-level initiatives and portfolios exceeding $215 million. His work focuses on diagnosing operational breakdowns, designing structured systems, and enabling leadership teams to execute consistently at scale.",
+      competencies: [
+        "Strategic Advisory",
+        "Organizational Transformation",
+        "Operational Systems Design",
+        "Performance and Accountability Frameworks",
+        "Healthcare and Hospice Growth Systems",
+        "Program and Portfolio Leadership"
+      ],
+      education: [
+        {
+          institution: "USC",
+          degree: "Doctor of Education (Ed.D.), Organizational Change and Leadership (Will confer 2026)"
+        },
+        {
+          institution: "Webster University",
+          degree: "MS, Leadership & Management"
+        },
+        {
+          institution: "Webster University",
+          degree: "MS, Acquisition & Procurement"
+        },
+        {
+          institution: "Mount Olive University",
+          degree: "BAS, Business Administration & Management"
+        },
+        {
+          institution: "CCAF",
+          degree: "AA, Contract Administration"
+        }
+      ]
+    }
+  },
+  {
     img: "/kelvin.jpeg",
     name: "Kevin Edmondson",
     role: "Senior Operations Consultant",
@@ -10,7 +53,7 @@ const experts = [
     fullDetails: {
       contact: {
         phone: "",
-        email: "kevin.edmondson@meridian.com"
+        email: "kevin.edmondson@themeridianconsultinggroup.com"
       },
       summary: "Senior strategic operations and leadership advisor with more than 30 years of experience guiding executive leadership on organizational strategy, workforce development, enterprise operations, and international collaboration initiatives.",
       competencies: [
@@ -51,7 +94,7 @@ const experts = [
     fullDetails: {
       contact: {
         phone: "(210) 834-2495",
-        email: "Maurice.Evans.1@icloud.com"
+        email: "maurice.evans@themeridianconsultinggroup.com"
       },
       summary: "Visionary Chief Information Officer (CIO) and accomplished IT Program Manager with over 5 years of executive IT leadership experience across multiple verticals. Proven track record of aligning technology strategy with business goals, leading digital transformations, and delivering millions of dollars in cost savings. Known for driving innovation, building high-performance teams, and enhancing resilience through robust cybersecurity and IT governance practices.",
       competencies: [
@@ -88,6 +131,38 @@ const experts = [
       ]
     }
   },
+  {
+    img: "/nancy.jpeg",
+    name: "Nancy Johnson",
+    role: "Senior Organizational Development Consultant",
+    bio: "Expert in organizational development, change management, and leadership coaching with a focus on building high-performance teams.",
+    fullDetails: {
+      contact: {
+        phone: "",
+        email: "nancy.johnson@themeridianconsultinggroup.com"
+      },
+      summary: "Nancy Johnson is a senior consultant specializing in organizational development and change management. With over 20 years of experience, she helps organizations navigate complex transformations and build sustainable leadership capabilities.",
+      competencies: [
+        "Organizational Development",
+        "Change Management",
+        "Leadership Coaching",
+        "Team Building",
+        "Performance Management",
+        "Strategic Planning",
+        "Executive Development"
+      ],
+      education: [
+        {
+          institution: "Harvard Business School",
+          degree: "MBA"
+        },
+        {
+          institution: "University of Pennsylvania",
+          degree: "Bachelor of Arts in Psychology"
+        }
+      ]
+    }
+  },
 ];
 
 export const Experts = () => (
@@ -100,7 +175,7 @@ export const Experts = () => (
           Every Meridian engagement is led by a partner with operational experience inside the industry we serve.
         </p>
       </div>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {experts.map((p, index) => (
             <article key={p.name} className="group bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="h-[480px] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
