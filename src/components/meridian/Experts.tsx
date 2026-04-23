@@ -103,7 +103,7 @@ export const Experts = () => (
         <div className="grid md:grid-cols-2 gap-8">
           {experts.map((p, index) => (
             <article key={p.name} className="group bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
+              <div className="aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
                 <img
                   src={p.img}
                   alt={p.name}
