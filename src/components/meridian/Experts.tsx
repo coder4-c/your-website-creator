@@ -6,7 +6,7 @@ const experts = [
     img: "/mauriceedmondson.jpeg",
     name: "Maurice V. Edmondson III",
     role: "Founder & Managing Partner",
-    bio: "Maurice Edmondson is a strategic advisor who helps organizations turn strategy into execution. With over 30 years of experience and leadership across $215M+ in enterprise initiatives, he specializes in diagnosing operational breakdowns and building systems that drive accountability, performance, and scalable growth.",
+    bio: "Founder of Meridian Consulting Group, visionary leader with extensive experience in strategic consulting and organizational transformation.",
     fullDetails: {
       contact: {
         phone: "(210) 273-7533",
@@ -175,19 +175,33 @@ export const Experts = () => (
           Every Meridian engagement is led by a partner with operational experience inside the industry we serve.
         </p>
       </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experts.map((p, index) => (
             <article key={p.name} className="group bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className="h-[480px] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
-                <img
-                  src={p.img}
-                  alt={p.name}
-                  loading="lazy"
-                  width={800}
-                  height={1000}
-                  className="w-full h-full object-cover object-top"
-                  style={p.name === "Maurice Evans" ? { objectPosition: "50% 5%" } : {}}
-                />
+              <div className="h-[380px] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
+                {p.name === "Nancy Johnson" ? (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-24 h-24 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-4xl">
+                      NJ
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    loading="lazy"
+                    width={800}
+                    height={1000}
+                    className="w-full h-full object-cover object-top"
+                    style={
+                      p.name === "Maurice Evans"
+                        ? { width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", transform: "none" }
+                        : p.name === "Maurice V. Edmondson III"
+                        ? { objectPosition: "center 20%" }
+                        : {}
+                    }
+                  />
+                )}
               </div>
               <div className="flex items-center gap-4 mb-2">
                 <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-lg">
@@ -206,15 +220,15 @@ export const Experts = () => (
                         <>
                           <div>
                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Contact</p>
-                            <div className="flex gap-2">
+                            <div className="flex flex-col gap-2">
                               {p.fullDetails.contact.phone && (
-                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
+                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm truncate">
                                   <div className="w-2 h-2 rounded-full bg-accent"></div>
                                   {p.fullDetails.contact.phone}
                                 </span>
                               )}
                               {p.fullDetails.contact.email && (
-                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm">
+                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent text-accent text-sm truncate">
                                   <div className="w-2 h-2 rounded-full bg-accent"></div>
                                   {p.fullDetails.contact.email}
                                 </span>
