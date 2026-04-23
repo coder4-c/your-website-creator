@@ -6,7 +6,7 @@ const experts = [
     img: "/kelvin.jpeg",
     name: "Kevin Edmondson",
     role: "Senior Operations Consultant",
-    bio: "Senior strategic operations advisor with experience in guiding executive leadership on organizational strategy, workforce development, delivering measurable improvements in execution consistency and operational efficiency..",
+    bio: "Senior strategic operations advisor with experience in guiding executive leadership on organizational strategy, workforce development, delivering measurable improvements in execution consistency and operational efficiency.",
     fullDetails: {
       contact: {
         phone: "",
