@@ -134,32 +134,95 @@ const experts = [
   {
     img: "/nancy.jpeg",
     name: "Nancy Johnson",
-    role: "Senior Organizational Development Consultant",
-    bio: "Expert in organizational development, change management, and leadership coaching with a focus on building high-performance teams.",
+    role: "Senior Healthcare Operations Consultant",
+    bio: "Healthcare executive & nurse leader with over 20 years of experience driving clinical operations, patient safety, and quality management.",
     fullDetails: {
       contact: {
         phone: "",
         email: "nancy.johnson@themeridianconsultinggroup.com"
       },
-      summary: "Nancy Johnson is a senior consultant specializing in organizational development and change management. With over 20 years of experience, she helps organizations navigate complex transformations and build sustainable leadership capabilities.",
+      summary: "Healthcare executive & nurse leader with over 20 years of experience driving clinical operations, patient safety, quality management & organizational high-reliability performance across complex healthcare systems. Expertise in process improvement, workforce development, infection control & prevention & healthcare delivery optimization. Proven ability to lead cross-functional, multi-disciplinary teams, implement system-wide initiatives, & advise leadership on strategic & operational improvements.",
       competencies: [
-        "Organizational Development",
-        "Change Management",
-        "Leadership Coaching",
-        "Team Building",
-        "Performance Management",
-        "Strategic Planning",
-        "Executive Development"
+        "Healthcare Operations & Performance Improvement",
+        "Process Optimization (Lean / Workflow Redesign)",
+        "Patient Safety & Quality Improvement Initiatives",
+        "Change Management & Organizational Transformation",
+        "Clinical Program Development & Evaluation",
+        "Infection Prevention & Regulatory Compliance",
+        "Executive Leadership & Stakeholder Engagement",
+        "Data-Driven Decision Making"
       ],
       education: [
         {
-          institution: "Harvard Business School",
-          degree: "MBA"
+          institution: "Chamberlain University",
+          degree: "Doctor of Nursing Practice (DNP), Health Systems Leadership"
         },
         {
-          institution: "University of Pennsylvania",
-          degree: "Bachelor of Arts in Psychology"
+          institution: "University of Phoenix",
+          degree: "Master of Science in Nursing & Master of Business Administration – Healthcare Management"
+        },
+        {
+          institution: "Rhode Island College",
+          degree: "Bachelor of Science in Nursing"
         }
+      ],
+      certifications: [
+        "Registered Nurse (Multi-State License)",
+        "Certified in Executive Nursing Practice",
+        "(soon) Certified Professional in Healthcare Quality"
+      ],
+      affiliations: [
+        "American Organization for Nursing Leadership",
+        "American Nurses Association",
+        "Academy of Medical-Surgical Nurses",
+        "Sigma Theta Tau International Honor Society"
+      ],
+      professionalExperience: [
+        {
+          title: "Chief Nurse / Senior Healthcare Leader, Air Force Inpatient & Outpatient facilities",
+          period: "2016 – Present",
+          bullets: [
+            "Led enterprise-level nursing operations supporting a large, multidisciplinary healthcare organization",
+            "Advised senior leadership on clinical performance, staffing models, and patient safety initiatives",
+            "Designed and implemented process improvements to enhance care delivery and operational efficiency",
+            "Directed workforce development programs, improving staff retention and clinical readiness",
+            "Collaborated across departments to standardize care practices and improve outcomes"
+          ]
+        },
+        {
+          title: "Nurse Manager/Surgical Services Operations Lead, DoD Level I Trauma/Burn Center",
+          period: "2013 – 2016",
+          bullets: [
+            "Managed high-volume inpatient surgical unit with responsibility for staffing, workflow, and quality outcomes",
+            "Led operational improvements to increase efficiency and reduce care delays",
+            "Coordinated interdisciplinary teams to optimize patient throughput and surgical care delivery",
+            "Provided leadership in performance improvement and patient safety initiatives"
+          ]
+        },
+        {
+          title: "Clinical Education & Workforce Development Leader",
+          period: "2009 – 2013",
+          bullets: [
+            "Directed nurse transition and training programs to improve workforce capability and readiness",
+            "Developed standardized onboarding and competency frameworks",
+            "Increased staff performance and retention through structured education programs"
+          ]
+        },
+        {
+          title: "Clinical Operations & Infection Control Prevention & Control Leader",
+          period: "2004 – 2009",
+          bullets: [
+            "Led infection prevention and control program, ensuring compliance with healthcare standards",
+            "Implemented system-wide quality improvements to reduce infection risks",
+            "Supervised inpatient care operations and multidisciplinary teams"
+          ]
+        }
+      ],
+      achievements: [
+        "Led clinical teams across multiple facilities and care settings",
+        "Improved patient safety and infection control compliance across organizations",
+        "Developed and implemented workforce training programs affecting large nursing populations",
+        "Recognized multiple times for leadership excellence and clinical performance"
       ]
     }
   },
@@ -179,29 +242,23 @@ export const Experts = () => (
           {experts.map((p, index) => (
             <article key={p.name} className="group bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="h-[380px] overflow-hidden rounded-xl mb-6 bg-secondary border-2 border-border group-hover:border-primary/20 transition-colors">
-                {p.name === "Nancy Johnson" ? (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-4xl">
-                      NJ
-                    </div>
-                  </div>
-                ) : (
-                  <img
-                    src={p.img}
-                    alt={p.name}
-                    loading="lazy"
-                    width={800}
-                    height={1000}
-                    className="w-full h-full object-cover object-top"
-                    style={
-                      p.name === "Maurice Evans"
-                        ? { width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", transform: "none" }
-                        : p.name === "Maurice V. Edmondson III"
-                        ? { objectPosition: "center 20%" }
-                        : {}
-                    }
-                  />
-                )}
+                 <img
+                   src={p.img}
+                   alt={p.name}
+                   loading="lazy"
+                   width={800}
+                   height={1000}
+                   className="w-full h-full object-cover object-top"
+                   style={
+                     p.name === "Maurice Evans"
+                       ? { width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", transform: "none" }
+                       : p.name === "Maurice V. Edmondson III"
+                       ? { objectPosition: "center 20%" }
+                       : p.name === "Nancy Johnson"
+                       ? { objectPosition: "center 20%" }
+                       : {}
+                   }
+                 />
               </div>
               <div className="flex items-center gap-4 mb-2">
                 <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-lg">
@@ -264,9 +321,69 @@ export const Experts = () => (
                               {edu.description && <p className="text-muted-foreground text-sm">{edu.description}</p>}
                             </div>
                           ))}
-                        </div>
-                      </div>
-                    </AccordionContent>
+                         </div>
+                       </div>
+                       {p.fullDetails.professionalExperience && p.fullDetails.professionalExperience.length > 0 && (
+                         <>
+                           <hr className="border-border" />
+                           <div>
+                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-4">Professional Experience</p>
+                             <div className="space-y-6">
+                               {p.fullDetails.professionalExperience.map((exp, idx) => (
+                                 <div key={idx} className="border-l-2 border-accent/50 pl-4">
+                                   <p className="font-bold text-primary">{exp.title}</p>
+                                   <p className="text-muted-foreground text-sm mb-2">{exp.period}</p>
+                                   <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
+                                     {exp.bullets.map((bullet, bulletIdx) => <li key={bulletIdx}>{bullet}</li>)}
+                                   </ul>
+                                 </div>
+                               ))}
+                             </div>
+                           </div>
+                         </>
+                       )}
+                       {p.fullDetails.achievements && p.fullDetails.achievements.length > 0 && (
+                         <>
+                           <hr className="border-border" />
+                           <div>
+                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Selected Impact & Achievements</p>
+                             <ul className="space-y-1 text-muted-foreground text-sm">
+                               {p.fullDetails.achievements.map((ach, idx) => <li key={idx}>{ach}</li>)}
+                             </ul>
+                           </div>
+                         </>
+                       )}
+                       {p.fullDetails.certifications && p.fullDetails.certifications.length > 0 && (
+                         <>
+                           <hr className="border-border" />
+                           <div>
+                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Certifications & License</p>
+                             <div className="flex flex-wrap gap-2">
+                               {p.fullDetails.certifications.map((cert, idx) => (
+                                 <span key={idx} className="inline-block px-2 py-1 rounded-md bg-muted border border-border text-muted-foreground text-xs">
+                                   {cert}
+                                 </span>
+                               ))}
+                             </div>
+                           </div>
+                         </>
+                       )}
+                       {p.fullDetails.affiliations && p.fullDetails.affiliations.length > 0 && (
+                         <>
+                           <hr className="border-border" />
+                           <div>
+                             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Professional Affiliations</p>
+                             <div className="flex flex-wrap gap-2">
+                               {p.fullDetails.affiliations.map((aff, idx) => (
+                                 <span key={idx} className="inline-block px-2 py-1 rounded-md bg-muted border border-border text-muted-foreground text-xs">
+                                   {aff}
+                                 </span>
+                               ))}
+                             </div>
+                           </div>
+                         </>
+                       )}
+                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
               )}
