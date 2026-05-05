@@ -36,6 +36,11 @@ export const experts = [
           bullets: ["14 years of service in program and contract management"]
         }
       ],
+      achievements: [
+        "Founded Meridian Consulting Group to provide strategic consulting services",
+        "Oversaw execution of programs contributing to a portfolio exceeding $215M",
+        "Served 14 years in the United States Air Force in program and contract management"
+      ],
       education: [
         {
           institution: "USC",
