@@ -1,10 +1,15 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { experts } from "@/data/experts";
 
 const Profile = () => {
   const { name } = useParams<{ name: string }>();
   const expert = experts.find(e => e.slug === name);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!expert) {
     return (
