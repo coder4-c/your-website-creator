@@ -42,8 +42,8 @@ export const Hero = () => (
               Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-           <Button asChild size="sm" className="bg-accent text-primary hover:opacity-95 font-semibold">
-              <a href="#contact" dangerouslySetInnerHTML={{ __html: "Schedule a 20 minutes<br class=\"md:hidden\">Leadership Alignment Conversation" }} />
+           <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground bg-primary-foreground/5 backdrop-blur hover:bg-primary-foreground/15 hover:text-primary-foreground hover:border-accent">
+              <a href="#contact">Schedule a 20 minutes Leadership Alignment Conversation</a>
             </Button>
         </div>
 
