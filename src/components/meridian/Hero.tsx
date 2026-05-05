@@ -42,7 +42,7 @@ export const Hero = () => (
               Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-           <Button asChild size="sm" className="bg-accent text-primary hover:opacity-95 font-semibold px-4 py-2 text-sm md:px-2 md:py-1 md:text-xs whitespace-normal text-center">
+           <Button asChild size="sm" className="bg-accent text-primary hover:opacity-95 font-semibold">
               <a href="#contact" dangerouslySetInnerHTML={{ __html: "Schedule a 20 minutes<br class=\"md:hidden\">Leadership Alignment Conversation" }} />
             </Button>
         </div>
