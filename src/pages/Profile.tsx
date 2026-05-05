@@ -84,14 +84,6 @@ const Profile = () => {
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                     {expert.bio}
                   </p>
-                  <div className="lg:hidden">
-                    <a
-                      href={`mailto:${expert.fullDetails.contact?.email}`}
-                      className="inline-flex items-center px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
-                    >
-                      Request a Consultation
-                    </a>
-                  </div>
                 </div>
               </div>
 
