@@ -36,7 +36,7 @@ export const Services = () => (
           Wherever performance breaks down, we bring structured thinking and operational discipline.
         </p>
         <div className="mt-4">
-          <Button asChild size="sm" className="bg-accent text-primary hover:opacity-95 font-semibold">
+          <Button asChild size="sm" className="bg-accent text-primary font-semibold">
             <a href="#contact">Organizational Performance Diagnostic (2–4 weeks)</a>
           </Button>
         </div>
