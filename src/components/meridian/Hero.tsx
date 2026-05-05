@@ -42,7 +42,7 @@ export const Hero = () => (
               Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-           <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground bg-primary-foreground/5 backdrop-blur hover:bg-primary-foreground/15 hover:text-primary-foreground hover:border-accent px-3 py-2 text-sm md:px-4 md:py-3 md:text-base">
+           <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground bg-primary-foreground/5 backdrop-blur hover:bg-primary-foreground/15 hover:text-primary-foreground hover:border-accent px-2 py-1 text-xs md:px-4 md:py-3 md:text-base">
               <a href="#contact">Schedule a 20 minutes Leadership Alignment Conversation</a>
             </Button>
         </div>
