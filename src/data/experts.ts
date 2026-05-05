@@ -8,7 +8,7 @@ export const experts = [
     fullDetails: {
       contact: {
         phone: "(210) 273-7533",
-        email: "maurice.edmondson@gmail.com"
+        email: "mauriceedmondson@themeridianconsultinggroup.com"
       },
       summary: "He brings over 30 years of experience spanning military service, federal leadership, and strategic advisory consulting. Maurice has led and overseen enterprise-level initiatives and portfolios exceeding $215 million. His work focuses on diagnosing operational breakdowns, designing structured systems, and enabling leadership teams to execute consistently at scale.",
       competencies: [
@@ -52,7 +52,7 @@ export const experts = [
     fullDetails: {
       contact: {
         phone: "",
-        email: "kevin.edmondson@themeridianconsultinggroup.com"
+        email: "kevinedmondson@themeridianconsultinggroup.com"
       },
       summary: "Senior strategic operations and leadership advisor with more than 30 years of experience guiding executive leadership on organizational strategy, workforce development, enterprise operations, and international collaboration initiatives.",
       competencies: [
@@ -158,7 +158,7 @@ export const experts = [
     fullDetails: {
       contact: {
         phone: "(210) 834-2495",
-        email: "maurice.evans@themeridianconsultinggroup.com"
+        email: "mauriceevans@themeridianconsultinggroup.com"
       },
       summary: "Visionary Chief Information Officer (CIO) and accomplished IT Program Manager with over 5 years of executive IT leadership experience across multiple verticals. Proven track record of aligning technology strategy with business goals, leading digital transformations, and delivering millions of dollars in cost savings. Known for driving innovation, building high-performance teams, and enhancing resilience through robust cybersecurity and IT governance practices.",
       competencies: [
@@ -204,7 +204,7 @@ export const experts = [
     fullDetails: {
       contact: {
         phone: "",
-        email: "nancy.johnson@themeridianconsultinggroup.com"
+        email: "nancyjohnson@themeridianconsultinggroup.com"
       },
       summary: "Healthcare executive & nurse leader with over 20 years of experience driving clinical operations, patient safety, quality management & organizational high-reliability performance across complex healthcare systems. Expertise in process improvement, workforce development, infection control & prevention & healthcare delivery optimization. Proven ability to lead cross-functional, multi-disciplinary teams, implement system-wide initiatives, & advise leadership on strategic & operational improvements.",
       competencies: [
