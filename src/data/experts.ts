@@ -209,6 +209,44 @@ export const experts = [
           institution: "Bellevue University, Bellevue, NE",
           degree: "Bachelor of Science in Information Systems, Minor in Business"
         }
+      ],
+      professionalExperience: [
+        {
+          title: "Chief Information Officer (CIO) – Alion Science and Technology",
+          period: "2023 – Present",
+          bullets: [
+            "Lead digital transformation initiatives for a $500M+ organization",
+            "Oversee IT strategy, cybersecurity, and infrastructure management",
+            "Drive cost savings through cloud migration and process optimization"
+          ]
+        },
+        {
+          title: "IT Program Manager – U.S. Department of Defense",
+          period: "2020 – 2023",
+          bullets: [
+            "Managed enterprise IT programs with budgets exceeding $50M",
+            "Led cross-functional teams in implementing ERP systems",
+            "Ensured compliance with DoD standards and cybersecurity protocols"
+          ]
+        },
+        {
+          title: "Senior IT Consultant – Various Government Contractors",
+          period: "2015 – 2020",
+          bullets: [
+            "Provided strategic IT advisory services to federal agencies",
+            "Implemented agile development practices and DevOps",
+            "Optimized IT operations resulting in 25% efficiency gains"
+          ]
+        }
+      ],
+      certifications: [
+        "Certified Information Systems Security Professional (CISSP)",
+        "Project Management Professional (PMP)",
+        "AWS Certified Solutions Architect"
+      ],
+      affiliations: [
+        "Association for Computing Machinery (ACM)",
+        "Information Systems Audit and Control Association (ISACA)"
       ]
     }
   },
