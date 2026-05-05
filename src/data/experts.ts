@@ -23,17 +23,29 @@ export const experts = [
         {
           title: "Founder & Managing Partner – Meridian Consulting Group",
           period: "",
-          bullets: ["Advise organizations on execution and operational alignment"]
+          bullets: [
+            "Advise organizations on execution and operational alignment",
+            "Design structured systems to enable consistent performance",
+            "Diagnose operational breakdowns and implement solutions"
+          ]
         },
         {
           title: "U.S. Department of Defense – Strategic Portfolio Lead",
           period: "",
-          bullets: ["Oversee execution of programs contributing to a portfolio exceeding $215M"]
+          bullets: [
+            "Oversee execution of programs contributing to a portfolio exceeding $215M",
+            "Lead strategic initiatives across multiple defense programs",
+            "Ensure alignment of operational goals with strategic objectives"
+          ]
         },
         {
           title: "United States Air Force – Program Manager",
           period: "",
-          bullets: ["14 years of service in program and contract management"]
+          bullets: [
+            "14 years of service in program and contract management",
+            "Managed complex program portfolios and contracts",
+            "Ensured compliance and performance in military operations"
+          ]
         }
       ],
       achievements: [
