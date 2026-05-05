@@ -244,6 +244,12 @@ export const experts = [
           ]
         }
       ],
+      achievements: [
+        "Led digital transformation initiatives for a $500M+ organization as CIO",
+        "Managed enterprise IT programs with budgets exceeding $50M",
+        "Optimized IT operations resulting in 25% efficiency gains",
+        "Ensured compliance with DoD standards and cybersecurity protocols"
+      ],
       certifications: [
         "Certified Information Systems Security Professional (CISSP)",
         "Project Management Professional (PMP)",
