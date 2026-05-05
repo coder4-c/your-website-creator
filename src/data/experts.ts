@@ -19,6 +19,23 @@ export const experts = [
         "Healthcare and Hospice Growth Systems",
         "Program and Portfolio Leadership"
       ],
+      professionalExperience: [
+        {
+          title: "Founder & Managing Partner – Meridian Consulting Group",
+          period: "",
+          bullets: ["Advise organizations on execution and operational alignment"]
+        },
+        {
+          title: "U.S. Department of Defense – Strategic Portfolio Lead",
+          period: "",
+          bullets: ["Oversee execution of programs contributing to a portfolio exceeding $215M"]
+        },
+        {
+          title: "United States Air Force – Program Manager",
+          period: "",
+          bullets: ["14 years of service in program and contract management"]
+        }
+      ],
       education: [
         {
           institution: "USC",
