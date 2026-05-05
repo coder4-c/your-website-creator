@@ -37,7 +37,7 @@ export const Experts = () => (
               </div>
               <div className="flex items-center gap-4 mb-2">
                 <div className="w-12 h-12 rounded-full bg-accent/20 border border-accent flex items-center justify-center text-accent font-bold text-lg">
-                  {p.name === "Dr. Nancy J. Johnson" ? "NJ" : p.name.split(' ').map(n => n[0]).join('')}
+                  {p.name === "Dr. Nancy J. Johnson" ? "DN" : p.name === "Kevin B. Edmondson" ? "KE" : p.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <h3 className="text-2xl font-bold text-primary group-hover:text-primary/80 transition-colors">{p.name}</h3>
               </div>
