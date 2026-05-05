@@ -43,7 +43,7 @@ export const Hero = () => (
             </a>
           </Button>
            <Button asChild size="sm" className="bg-accent text-primary hover:opacity-95 font-semibold px-4 py-2 text-sm md:px-2 md:py-1 md:text-xs whitespace-normal text-center">
-              <a href="#contact" dangerouslySetInnerHTML={{ __html: "Schedule a 20 minutes<br>Leadership Alignment Conversation" }} />
+              <a href="#contact" dangerouslySetInnerHTML={{ __html: "Schedule a 20 minutes<br class=\"md:hidden\">Leadership Alignment Conversation" }} />
             </Button>
         </div>
 
