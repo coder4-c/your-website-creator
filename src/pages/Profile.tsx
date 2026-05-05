@@ -60,13 +60,14 @@ const Profile = () => {
     <div className="min-h-screen bg-background">
       <section className="py-24">
         <div className="container max-w-6xl">
-          <a
-            href="/#experts"
+          <Link
+            to="/"
+            state={{ scrollTo: "experts" }}
             className="inline-flex items-center gap-2 text-accent hover:text-accent/80 mb-8 transition-smooth"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Home
-          </a>
+          </Link>
 
           <div className="flex flex-col lg:flex-row gap-8">
             <main className="lg:w-11/16">

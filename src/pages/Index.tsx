@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Navbar } from "@/components/meridian/Navbar";
 import { Hero } from "@/components/meridian/Hero";
 import { Credibility } from "@/components/meridian/Credibility";
@@ -12,23 +14,36 @@ import { Contact } from "@/components/meridian/Contact";
 import { Footer } from "@/components/meridian/Footer";
 import { Reveal } from "@/components/meridian/Reveal";
 
-const Index = () => (
-  <div className="min-h-screen bg-background">
-    <Navbar />
-    <main>
-      <Hero />
-      <Reveal><Credibility /></Reveal>
-      <Reveal><HowWeHelp /></Reveal>
-      <Reveal><Services /></Reveal>
-      <Reveal><Framework /></Reveal>
-      <Reveal><Insights /></Reveal>
-      <Reveal><Experts /></Reveal>
-      <Reveal><ValueCompare /></Reveal>
-      <Reveal><Metrics /></Reveal>
-      <Reveal><Contact /></Reveal>
-    </main>
-    <Footer />
-  </div>
-);
+const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === "experts") {
+      const element = document.getElementById("experts");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.state]);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <Reveal><Credibility /></Reveal>
+        <Reveal><HowWeHelp /></Reveal>
+        <Reveal><Services /></Reveal>
+        <Reveal><Framework /></Reveal>
+        <Reveal><Insights /></Reveal>
+        <Reveal id="experts"><Experts /></Reveal>
+        <Reveal><ValueCompare /></Reveal>
+        <Reveal><Metrics /></Reveal>
+        <Reveal><Contact /></Reveal>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Index;
