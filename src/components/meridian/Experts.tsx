@@ -45,10 +45,7 @@ export const Experts = () => (
               <p className="text-muted-foreground leading-relaxed mb-4 min-h-[72px]">{p.bio}</p>
               {p.fullDetails && (
                 <div className="border-t pt-4">
-                  <Link
-                    to={`/profile/${encodeURIComponent(p.name)}`}
-                    className="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
-                  >
+                  <Link to={`/profile/${p.slug}`} className="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors">
                     View Full Profile →
                   </Link>
                 </div>

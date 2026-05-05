@@ -4,7 +4,7 @@ import { experts } from "@/data/experts";
 
 const Profile = () => {
   const { name } = useParams<{ name: string }>();
-  const expert = experts.find(e => e.name === decodeURIComponent(name || ""));
+  const expert = experts.find(e => e.slug === name);
 
   if (!expert) {
     return (

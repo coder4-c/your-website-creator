@@ -2,6 +2,7 @@ export const experts = [
   {
     img: "/mauriceedmondson.jpeg",
     name: "Maurice V. Edmondson III",
+    slug: "maurice-edmondson",
     role: "Founder & Managing Partner",
     bio: "Founder of Meridian Consulting Group, visionary leader with extensive experience in strategic consulting and organizational transformation.",
     fullDetails: {
@@ -45,6 +46,7 @@ export const experts = [
   {
     img: "/kelvin.jpeg",
     name: "Kevin B. Edmondson",
+    slug: "kevin-edmondson",
     role: "Senior Strategic Operations Advisor",
     bio: "Senior strategic operations and leadership advisor with more than 30 years of experience guiding executive leadership on organizational strategy, workforce development, enterprise operations, and international collaboration initiatives.",
     fullDetails: {
@@ -150,6 +152,7 @@ export const experts = [
   {
     img: "/Evans.jpeg",
     name: "Maurice Evans",
+    slug: "maurice-evans",
     role: "Chief Information Officer & Digital Transformation Leader",
     bio: "Visionary CIO with over 5 years of executive IT leadership, aligning technology strategy with business goals, leading digital transformations, and delivering cost savings through cybersecurity and IT governance.",
     fullDetails: {
@@ -195,6 +198,7 @@ export const experts = [
   {
     img: "/nancy.jpeg",
     name: "Dr. Nancy J. Johnson",
+    slug: "nancy-johnson",
     role: "Senior Healthcare Operations Consultant",
     bio: "Healthcare executive & nurse leader with over 20 years of experience driving clinical operations, patient safety, and quality management.",
     fullDetails: {
