@@ -29,7 +29,7 @@ export const Experts = () => (
                        ? { width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", display: "block", transform: "none" }
                        : p.name === "Maurice V. Edmondson III"
                        ? { objectPosition: "center 20%" }
-                       : p.name === "Nancy Johnson"
+                        : p.name === "Dr. Nancy J. Johnson"
                        ? { objectPosition: "center 20%" }
                        : {}
                    }
