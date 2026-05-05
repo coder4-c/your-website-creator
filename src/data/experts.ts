@@ -194,7 +194,7 @@ export const experts = [
   },
   {
     img: "/nancy.jpeg",
-    name: "Nancy Johnson",
+    name: "Dr. Nancy J. Johnson",
     role: "Senior Healthcare Operations Consultant",
     bio: "Healthcare executive & nurse leader with over 20 years of experience driving clinical operations, patient safety, and quality management.",
     fullDetails: {
