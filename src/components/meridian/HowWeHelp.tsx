@@ -2,7 +2,7 @@ import { Search, Scale, Target, ArrowRight } from "lucide-react";
 
 const steps = [
   { icon: Search, title: "Diagnose", desc: "Identify the root problems hidden inside leadership, structure, and process." },
-  { icon: Scale, title: "Align", desc: "Fix leadership and systems so people, decisions, and execution move in one direction." },
+  { icon: Scale, title: "Align", desc: "Strengthen leadership and systems so people, decisions, and execution move in one direction." },
   { icon: Target, title: "Execute", desc: "Drive measurable results through accountable rhythm and clear ownership." },
 ];
 
