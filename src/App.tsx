@@ -1,32 +1,40 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
-import Article from "./pages/Article.tsx";
-import Profile from "./pages/Profile.tsx";
-
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/insights" element={<Index />} />
-          <Route path="/insights/:slug" element={<Article />} />
-          <Route path="/profile/:name" element={<Profile />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
+export default function App() {
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#f5f5f5',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+      }}
+    >
+      <div
+        style={{
+          background: '#fff',
+          padding: '3rem 2.5rem',
+          borderRadius: '10px',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
+          textAlign: 'center',
+          maxWidth: '420px',
+        }}
+      >
+        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔧</div>
+        <h1 style={{ fontSize: '1.4rem', marginBottom: '0.75rem', color: '#222' }}>
+          Website Under Maintenance
+        </h1>
+        <p style={{ color: '#555', lineHeight: 1.5, marginBottom: '0.5rem' }}>
+          We are currently performing scheduled maintenance and updates on this website.
+        </p>
+        <p style={{ color: '#555', lineHeight: 1.5 }}>
+          We apologize for the inconvenience. Please check back soon.
+        </p>
+        <hr style={{ margin: '1.5rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+        <p style={{ fontSize: '0.85rem', color: '#999' }}>
+          The Meridian Consulting Group — Coming Back Soon
+        </p>
+      </div>
+    </div>
+  );
+}
