@@ -32,7 +32,7 @@ export default function App() {
         </p>
         <hr style={{ margin: '1.5rem 0', border: 'none', borderTop: '1px solid #eee' }} />
         <p style={{ fontSize: '0.85rem', color: '#999' }}>
-          The Meridian Consulting Group — Coming Back Soon
+          The Meridian Consulting Group Coming Back Soon
         </p>
       </div>
     </div>
